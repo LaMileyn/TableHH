@@ -1,0 +1,28 @@
+.paginator-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 25px 12px 41px;
+    align-items: center;
+}
+.paginator-btn button{
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #474955;
+    cursor: pointer;
+}
+.paginatorPages{
+    width: 104px;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.paginatorPages span{
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.paginatorPages span.active{
+    color: var(--green-color);
+}

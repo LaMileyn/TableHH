@@ -1,0 +1,47 @@
+.tableWrapper {
+    margin-top: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+th {
+    padding-top: 19px;
+    padding-bottom: 16px;
+    background: var(--blue-color);
+    cursor: pointer;
+    color: white;
+}
+
+td {
+    padding: 41px 51px 28px 51px;
+    border-bottom: 1px solid #E3E6EC;
+    border-left: 1px solid #E3E6EC;
+}
+
+th > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+td:nth-child(3n) {
+    border-right: 1px solid #E3E6EC;
+}
+
+.nothing-mathed {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 570px) {
+    td {
+        padding: 40px 10px;
+    }
+}

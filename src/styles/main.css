@@ -1,0 +1,23 @@
+*{
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    border: none;
+}
+.App{
+    margin: 0 auto;
+    width: 1870px;
+    max-width: 95%;
+    padding: 23px 77px 12px 78px;
+}
+
+@media screen and (max-width: 710px){
+    .App{
+        padding: 0;
+        padding-top: 23px;
+    }
+}

@@ -1,0 +1,19 @@
+.wrapperSearch {
+    position: relative;
+    width: 631px;
+    max-width: 95%;
+}
+
+.wrapperSearch span {
+    position: absolute;
+    right: 24px;
+    z-index: 999;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+}
+
+.material-symbols-outlined {
+    color: white;
+}

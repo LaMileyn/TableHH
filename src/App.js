@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Search from "./components/Search/Search";
+import Table from "./components/Table/Table";
+import Pagination from "./components/Pagination/Pagination";
+import {useEffect, useState} from "react";
+import {getTableData} from "./redux/actionCreators/TableData";
+import {useDispatch, useSelector} from "react-redux";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const { data } = useSelector( state => state.tableData )
+    const dispatch = useDispatch()
+
+    useEffect(()=>{
+        dispatch(getTableData())
+    },[])
+
+
+    return (
+        <div className="App">
+            <Search/>
+            <Table/>
+            <Pagination/>
+        </div>
+    );
 }
 
 export default App;
