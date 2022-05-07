@@ -54,7 +54,7 @@ const Pagination = () => {
                 }
             </div>
             <div className="paginator-btn">
-                <button disabled={currentPage + 1 > totalUsersCount} onClick={setNextPage}>Далее</button>
+                <button disabled={currentPage + 1 > totalPagesCount} onClick={setNextPage}>Далее</button>
             </div>
         </div>
     )

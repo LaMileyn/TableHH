@@ -5,7 +5,6 @@ import Preloder from "../../UI/Preloder";
 
 const Table = () => {
     const sortTypes = {"ID": false, "Заголовок": false, "Описание": false}
-    // const [equalSortType, setEqualSortType] = useState(false)
     const [tableSortType, setTableSortType] = useState(null)
     const {data, fetching} = useSelector(state => state.tableData);
     const {text} = useSelector(state => state.textFilter)
